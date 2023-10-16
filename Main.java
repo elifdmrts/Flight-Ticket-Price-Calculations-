@@ -16,15 +16,15 @@ public class Main {
         if (yas < 12) {
             yasIndrm = (fıyat) * (0.5);
             fıyat = fıyat - yasIndrm;
-            // System.out.println("Fiyat: " + fıyat);
+            
         } else if (yas > 12 && yas < 24) {
             yasIndrm = (fıyat) * (0.1);
             fıyat = fıyat - yasIndrm;
-            //System.out.println("Fiyat: " + fıyat);
+           
         } else if (yas > 65) {
             yasIndrm = (fıyat) * (0.3);
             fıyat = fıyat - yasIndrm;
-            // System.out.println("Fiyat: " + fıyat);
+           
         }
 
         if (yolculukTıpı == 2) {
