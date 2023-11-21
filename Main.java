@@ -27,13 +27,18 @@ public class Main {
            
         }
 
+        if (mesafe<0 || yas<0 ){
+            System.out.println("Hatalı Veri Girdiniz!");
+            return;
+        }
         if (yolculukTıpı == 2) {
             tıpIndırım = fıyat * (0.2);
-            fıyat = fıyat - tıpIndırım;
+            fıyat = (fıyat - tıpIndırım)*2;
             System.out.println("Toplam Tutar: " + fıyat + "TL");
-
         } else if (yolculukTıpı != 1 && yolculukTıpı != 2) {
             System.out.println("Hatalı Veri Girdiniz");
+            return;
         } else System.out.println("Toplam Tutar: " + fıyat + "TL");
     }
 }
+
